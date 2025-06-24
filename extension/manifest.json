@@ -4,8 +4,18 @@
     "version": "1.0",
     "description": "A Chrome extension that detects fake news articles using AI.",
     "icons": {},
+    "action": {},
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
     "background": {
         "service_worker": "background.js",
         "type": "module"
-    }
+    },
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ]
 }
