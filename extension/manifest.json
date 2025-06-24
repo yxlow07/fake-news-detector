@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Fake News Detector",
+    "version": "1.0",
+    "description": "A Chrome extension that detects fake news articles using AI.",
+    "icons": {},
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}

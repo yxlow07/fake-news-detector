@@ -1,2 +1,4 @@
 /.idea
 /datasets/cleaned_data.csv
+/__pycache__/
+/models/
