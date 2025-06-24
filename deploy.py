@@ -40,7 +40,7 @@ async def predict(input_text: InputText):
 
     prediction = model.predict(vectorized_text)
     
-    return {"prediction": int(prediction)}
+    return {"prediction": int(prediction), "cleaned_text": cleaned_text}
 
 @app.get("/")
 async def root():
