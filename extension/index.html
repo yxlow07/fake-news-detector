@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Fake News Detector</h1>
+            <p>AI-powered news analysis tool</p>
+        </div>
+
+        <div id="initial-state" class="section">
+            <button id="analyze-btn" class="analyze-button">
+                <span>Analyze This Page</span>
+            </button>
+        </div>
+
+        <div id="loading-state" class="section hidden">
+            <div class="loading-container">
+                <div class="circular-progress">
+                    <svg class="progress-ring" width="60" height="60">
+                        <circle class="progress-ring-circle" stroke="#2196F3" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                    </svg>
+                    <div class="progress-text">AI</div>
+                </div>
+                <p class="loading-text">Analyzing content with AI...</p>
+            </div>
+        </div>
+
+        <div id="results-state" class="section hidden">
+            <div class="result-header">
+                <div id="result-badge" class="badge">
+                    <span id="result-icon">✅</span>
+                    <span id="result-text">REAL NEWS</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="analyze-again-btn" class="secondary-button">
+                    Analyze Again
+                </button>
+            </div>
+        </div>
+
+        <div id="error-state" class="section hidden">
+            <div class="error-container">
+                <div class="error-icon">⚠️</div>
+                <h3>Analysis Failed</h3>
+                <p id="error-message">Unable to analyze the current page. Please try again.</p>
+                <button id="retry-btn" class="retry-button">
+                    Try Again
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

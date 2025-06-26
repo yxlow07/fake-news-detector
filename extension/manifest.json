@@ -3,8 +3,15 @@
     "name": "Fake News Detector",
     "version": "1.0",
     "description": "A Chrome extension that detects fake news articles using AI.",
-    "icons": {},
-    "action": {},
+    "icons": {
+        "128": "logo.png",
+        "48": "logo.png",
+        "16": "logo.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Fake News Detector"
+    },
     "permissions": [
         "activeTab",
         "scripting",
