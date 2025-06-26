@@ -12,7 +12,7 @@
 # Dataset Source
 Dataset is sourced from this link: [Github](https://github.com/kapilsinghnegi/Fake-News-Detection/tree/main/Datasets)
 
-# Installation
+# Installation and Training Steps
 
 Step 1:
 ```
@@ -35,3 +35,10 @@ uvicorn deploy:app --reload
 ```
 
 Run the `deploy.py` file to deploy the model as a web service using uvicorn.
+
+# Extension Installation
+1. Donwload the folder extension from this repo. 
+2. Open Chrome and go to `chrome://extensions/`.
+3. Enable "Developer mode" at the top right corner.
+4. Click on "Load unpacked" and select the `extension` folder.
+5. The extension should now be installed and ready to use.
